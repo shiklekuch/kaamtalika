@@ -5,8 +5,28 @@
         </title>
     </head>
     <body>
+       
         <h1>Kaamtalika Header</h1>
-        <label for="List">Todo:</label>
-        <input type="text" id="List" name="List" required minlength="4" maxlength="15" size="20"></input>
+        <label for="Todo">Todo:</label>
+        <input type="text" id="Todo" name="Todo" required minlength="4" maxlength="15" size="20"></input>
+    
+    <script>
+        let input = document.getElementById('Todo')
+        input.addEventListener(
+            'keydown', 
+            (event) => {
+                if (event.key === 'Enter') {
+                    console.log("va", event.target.value);
+                }
+            }
+        );
+
+       
+        
+
+       
+
+   
+    </script>
     </body>
 </html>
